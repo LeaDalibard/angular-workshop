@@ -102,9 +102,28 @@ You should have something like that :
 ### Make a form where you can add your famous people :
 
 1. Create a new Component AddPeopleComponent.
-2. In the template, create a form with inputs First name, Last Name and description.
+2. In the template, create a form with inputs First name, Last Name and Description.
+3. Add attributes "name" and ngModel to inputs to signal Angular which inputs to check.
+
+As an example for First name you should have something like :
+
+```
+<div class="form-group">
+        <label for="fname">
+          First name :
+        </label>
+        <input type="text" id="fname" class="form-control"  name="fname" ngModel required>
+      </div>
+```
+4. To submit the form add the following to your template :
+` <form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm"> `
+
+`<button class="btn btn-primary" type="submit">Add</button>`
 
 
+### Nice to Have:
+
+-Add validation to your form
 
 ## Time to showboat ! Here is how you can display your App on Github :
 
