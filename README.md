@@ -33,13 +33,15 @@ Congrats, you are good to go ! \o/
 
 ### Make your first Component :
 
-1. In this component we are gonna display the list of all our famous people, in the terminal type :
+1. We are gonna make a Famous People List component, where we are gonna display the list of all our famous people.
+In the terminal type :
  `ng generate component famous-people-list`
  (or  : `ng g cfamous-people-list`)
  
  You now have a folder with a template, a style and ts files for this component!
  
  2. Now go back to app.component.html and modify it to have : 
+ 
  ```
  <div class="container">
   <div class="row">
@@ -49,9 +51,9 @@ Congrats, you are good to go ! \o/
   </div>
 </div>
  ```
+ Have a look at your browser, you can see the template of your component!
  
- 
- 
+3. 
  
 
 
