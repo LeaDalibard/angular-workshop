@@ -27,5 +27,6 @@ You should see, the Angular Welcome Page opened in your browser.
 
 Congrats, you are good to go ! \o/
 
+## Time to showboat ! Here is how you can display your App on Github :
 
 ## Tips
