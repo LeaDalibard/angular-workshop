@@ -27,6 +27,18 @@ You should see, the Angular Welcome Page opened in your browser.
 
 Congrats, you are good to go ! \o/
 
+## Built your App
+
+- Delete everything in app.component.html
+
+### Make your first Component :
+
+- In this component we are gonna display the list of all our famous people, in the terminal type :
+ `ng generate component famous-people-list'
+ (or  : `ng g c`famous-people-list`)
+ 
+
+
 ## Time to showboat ! Here is how you can display your App on Github :
 
 ## Tips
