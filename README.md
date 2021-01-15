@@ -92,7 +92,10 @@ Displays your arrays famous people in a list-group (Remember you have Bootstrap 
 
 You should have something like that : 
 
-5. Add 2 methods `onClickAddPros()` and `onClickCons()` to make the button dynamic so that when you click on Pros, you increase advantage counter and on Cons disadvantages counter.
+![pros,cons](/pros-cons.png)
+
+
+5. Add 2 methods `onClickAddPros()` and `onClickAddCons()` to make the button dynamic so that when you click on Pros, you increase advantage counter and on Cons disadvantages counter.
 
 **Tips** :
 - Use [Event binding] (https://angular.io/guide/event-binding) 
