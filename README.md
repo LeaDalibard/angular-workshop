@@ -36,6 +36,7 @@ Congrats, you are good to go ! \o/
 - In this component we are gonna display the list of all our famous people, in the terminal type :
  `ng generate component famous-people-list`
  (or  : `ng g cfamous-people-list`)
+ You now have a folder with a template, a style and ts file for this component!
  
 
 
