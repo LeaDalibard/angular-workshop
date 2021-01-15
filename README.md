@@ -53,9 +53,33 @@ In the terminal type :
  ```
  Have a look at your browser, you can see the template of your component!
  
-3. 
- 
+3. In famous-people-list.component, make a variable famousPeople which is an array of objects (we will make it dynamic later)
 
+```
+famousPeople = [
+    {
+      fName: 'First Name 1',
+      lName: 'Last Name 1',
+      description: 'Description 1',
+      advantages: 0,
+      disadvantages: 0,
+    },
+    {
+      fName: 'First Name 2',
+      lName: 'Last Name 2',
+      description: 'Description 2',
+      advantages: 0,
+      disadvantages: 0,
+    },
+    {
+      fName: 'First Name 3',
+      lName: 'Last Name 3',
+      description: 'Description 3',
+      advantages: 0,
+      disadvantages: 0,
+    }
+  ];
+```
 
 ## Time to showboat ! Here is how you can display your App on Github :
 
