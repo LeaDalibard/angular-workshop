@@ -53,7 +53,7 @@ In the terminal type :
  ```
  Have a look at your browser, you can see the template of your component!
  
-3. In famous-people-list.component, make a variable famousPeople which is an array of objects (we will make it dynamic later)
+3. In **famous-people-list.component.ts** : make a variable famousPeople which is an array of objects (we will make it dynamic later)
 
 ```
 famousPeople = [
@@ -80,7 +80,16 @@ famousPeople = [
     }
   ];
 ```
+4.  In **famous-people-list.component.html** :
+
+Displays your arrays famous people in a list-group (Remember you have Bootstrap installed), and for each item display the First Name, Last Name and Description and add 2 buttons where you can count advantages and disadvantages.
+
+You should have something like that : 
+
+**Tips** :
+
+
 
 ## Time to showboat ! Here is how you can display your App on Github :
 
-## Tips
+
