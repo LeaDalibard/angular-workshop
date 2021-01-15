@@ -53,7 +53,7 @@ In the terminal type :
  ```
  Have a look at your browser, you can see the template of your component!
  
-3. In **famous-people-list.component.ts** : make a variable famousPeople which is an array of objects (we will make it dynamic later)
+3. In **famous-people-list.component.ts** : Add a variable famousPeople which is an array of objects (we will make it dynamic later)
 
 ```
 famousPeople = [
@@ -82,11 +82,20 @@ famousPeople = [
 ```
 4.  In **famous-people-list.component.html** :
 
-Displays your arrays famous people in a list-group (Remember you have Bootstrap installed), and for each item display the First Name, Last Name and Description and add 2 buttons where you can count advantages and disadvantages.
+Displays your arrays famous people in a list-group (Remember you have Bootstrap installed), and for each item display the First Name, Last Name and Description and add 2 buttons "Pros" and "Cons".
+
+**Tips** :
+
+- Use [interpolation] (https://angular.io/guide/interpolation) to communicate from code to template
+- Use [*ngFor](https://guide-angular.wishtack.io/angular/composants/ngfor) to loop inside your array
+
 
 You should have something like that : 
 
+5. Add 2 methods `onClickAddPros()` and `onClickCons()` to make the button dynamic so that when you click on Pros, you increase advantage counter and on Cons disadvantages counter.
+
 **Tips** :
+- Use [Event binding] (https://angular.io/guide/event-binding) 
 
 
 
