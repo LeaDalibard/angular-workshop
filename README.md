@@ -12,7 +12,7 @@
 
 - Create your project : `ng new my-cool-project-name --style=scss --skip-tests=true`
 
-(Here you directly configurate it to use SCSS and specify to skip the test '.spec' files that we won't use here)
+(Here you directly configurate it to use SCSS and specify to skip the test '.spec' files that we won't use for this workshop)
 
 - Go to your project `cd my-cool-project-name` and install Bootstrap : `npm install bootstrap@3.3.7 --save`.
   Then in your project, in the file `angular.json`, modify the styles array to have :
@@ -23,6 +23,7 @@
             ], `
             
 - You can now launch the server in your terminal : `ng serve --open`
+You should see, the Angular Welcome Page opened in your browser.
 
 Congrats, you are good to go ! \o/
 
