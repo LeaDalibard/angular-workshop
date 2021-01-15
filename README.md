@@ -33,7 +33,7 @@ Congrats, you are good to go ! \o/
 
 ### Make your first Component :
 
-1. We are gonna make a Famous People List component, where we are gonna display the list of all our famous people.
+1. We are gonna make a FamousPeopleListComponent, where we are gonna display the list of all our famous people.
 In the terminal type :
  `ng generate component famous-people-list`
  (or  : `ng g c famous-people-list`)
@@ -94,11 +94,15 @@ You should have something like that :
 
 ![pros,cons](/pros-cons.png)
 
-
 5. Add 2 methods `onClickAddPros()` and `onClickAddCons()` to make the button dynamic so that when you click on Pros, you increase advantage counter and on Cons disadvantages counter.
 
 **Tips** :
 - Use [Event binding] (https://angular.io/guide/event-binding) 
+
+### Make a form where you can add your famous people :
+
+1. Create a new Component AddPeopleComponent.
+2. In the template, create a form with inputs First name, Last Name and description.
 
 
 
