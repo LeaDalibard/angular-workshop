@@ -85,7 +85,7 @@ famousPeople = [
   ];
 ```
 
-In **famous-people-list.component.ts** : Import service and post
+In **famous-people-list.component.ts** : Import service in constructor and call your posts onInit
 
 4.  In **famous-people-list.component.html** :
 
