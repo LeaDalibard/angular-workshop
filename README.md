@@ -141,12 +141,13 @@ You can now replace your initial famousPeople Array by an empty one, as you will
 
 ### Nice to Have:
 
--Add validation to your form
--Make a model for Famous people
--Use Routing
--Add other functionnalities : photos, comment, sort by, changed color depending of pros and counters
--Add some styling
--Save your datas using XXXXX
+- Add validation to your form
+- Make a model for Famous people
+- Use Routing
+- Add other functionnalities : photos, comment, sort by, changed color depending of pros and counters
+- Add some styling
+- Add edit function
+- Save your datas using XXXXX
 
 
 ## Time to showboat ! Here is how you can display your App on Github :
