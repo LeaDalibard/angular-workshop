@@ -53,7 +53,11 @@ In the terminal type :
  ```
  Have a look at your browser, you can see the template of your component!
  
-3. In **famous-people-list.component.ts** : Add a variable famousPeople which is an array of objects (we will make it dynamic later)
+4. Now make a directory **services** and inside a file **famousPeople.service.ts**
+
+=>In App module Services have to be imported and put in providersArray
+
+In **famousPeople.service.ts** : Add a variable famousPeople which is an array of objects (we will make it dynamic later)
 
 ```
 famousPeople = [
@@ -80,6 +84,9 @@ famousPeople = [
     }
   ];
 ```
+
+In **famous-people-list.component.ts** : Import service and post
+
 4.  In **famous-people-list.component.html** :
 
 Displays your arrays famous people in a list-group (Remember you have Bootstrap installed), and for each item display the First Name, Last Name and Description and add 2 buttons "Pros" and "Cons".
