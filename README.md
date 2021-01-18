@@ -14,7 +14,7 @@
 
 (Here you directly configurate it to use SCSS and specify to skip the test '.spec' files that we won't use for this workshop)
 
-- Go to your project `cd my-cool-project-name` and install Bootstrap : `npm install bootstrap@3.3.7 --save`.
+- Go to your project `cd my-cool-project-name` and install Bootstrap : `npm install bootstrap --save`.
   Then in your project, in the file `angular.json`, modify the styles array to have :
   
   `"styles": [
