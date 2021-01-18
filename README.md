@@ -101,10 +101,11 @@ You should have something like that :
 
 ![pros,cons](/pros-cons.png)
 
-5. Add 2 methods `onClickAddPros()` and `onClickAddCons()` to make the button dynamic so that when you click on Pros, you increase advantage counter and on Cons disadvantages counter.
+5. Add 2 methods `onClickAddPros()` and `onClickAddCons()` to make the button dynamic so that when you click on Pros, you increase advantage counter and on Cons disadvantages counter . They should call 2 methods in **famousPeople.service.ts** :`addPros()` and `addCons()`.
 
 **Tips** :
 - Use [Event binding] (https://angular.io/guide/event-binding) 
+- Add **index** to your `*ngFor` and pass it as an argument to your methods
 
 ### Make a form where you can add your famous people :
 
@@ -127,10 +128,24 @@ As an example for First name you should have something like :
 
 `<button class="btn btn-primary" type="submit">Add</button>`
 
+5. In **add-people.component.ts**, import famousPeopleService, and passed it as an argument in your constructor.
+Add the `onSubmit()` method which take value from the form and use a addFamousPeople method from Services to pass it to your form FamousPeople.
+
+6. Add a delete button in **famous-people-list.component.ts** and onClick call a method `deleteFamousPeople`in famousPeopleService.
+
+**Tips** : Use splice()
+
+7. Congrats you are done with the requirements, go add styling and extra useful functionnality to you app !
+
 
 ### Nice to Have:
 
 -Add validation to your form
+-Make a model for Famous people
+-Use Routing
+-Add other functionnalities : photos, comment, sort by, changed color depending of pros and counters
+-Add some styling
+
 
 ## Time to showboat ! Here is how you can display your App on Github :
 
