@@ -130,6 +130,7 @@ As an example for First name you should have something like :
 
 5. In **add-people.component.ts**, import famousPeopleService, and passed it as an argument in your constructor.
 Add the `onSubmit()` method which take value from the form and use a addFamousPeople method from Services to pass it to your form FamousPeople.
+You can now replace your initial famousPeople Array by an empty one, as you will be filling it yourself.
 
 6. Add a delete button in **famous-people-list.component.ts** and onClick call a method `deleteFamousPeople`in famousPeopleService.
 
@@ -145,6 +146,7 @@ Add the `onSubmit()` method which take value from the form and use a addFamousPe
 -Use Routing
 -Add other functionnalities : photos, comment, sort by, changed color depending of pros and counters
 -Add some styling
+-Save your datas using XXXXX
 
 
 ## Time to showboat ! Here is how you can display your App on Github :
