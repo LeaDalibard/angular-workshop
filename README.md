@@ -153,7 +153,7 @@ Do the same for the disadvantages counter.
 1. Create a new Component AddPeopleComponent.
 2. In the template, create a form with inputs First name, Last Name and Description.
 3. Add attributes "name" and [ngModel](https://angular.io/api/forms/NgModel) to inputs to signal Angular which inputs to check.
-
+(In app.module.ts, you also need to import the FormsMOdule and pass it to your imports array)
 As an example for First name you should have something like :
 
 ```
@@ -173,8 +173,36 @@ As an example for First name you should have something like :
 
 5. In **add-people.component.ts**, import famousPeopleService, and passed it as an argument in your constructor.
 
-Add the `onSubmit()` method which take value from the form and use a addFamousPeople method from Services to pass it to your form FamousPeople (as we did for the advantages and disadvantages counters).
+Also import `{NgForm} from '@angular/forms';`
+
+Add the `onSubmit()` method which take value from the form and use a addFamousPeople method from Services to pass it to your array FamousPeople (as we did for the advantages and disadvantages counters):
+
+```
+ onSubmit(form: NgForm) {
+    const famousPeople = {
+      fName: '',
+      lName: '',
+      description: '',
+      advantages: 0,
+      disadvantages: 0,
+    };
+    famousPeople['fName'] = form.value['fName'];
+    famousPeople['lName'] = form.value['lName'];
+    famousPeople['description'] = form.value['description'];
+    this.famousPeopleService.addFamousPeople(famousPeople);
+  }
+```
+
+6. Go back to your **famousPeopleService** : 
 You can now replace your initial famousPeople Array by an empty one, as you will be filling it yourself.
+
+Add the 'addFamousPeople' method :
+
+```
+addFamousPeople(newFamousPeople) {
+    this.famousPeople.push(newFamousPeople);
+  }
+```
 
 7. Congrats you are done with the requirements, go add styling and extra useful functionnality to you app !
 
