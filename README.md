@@ -153,3 +153,14 @@ You can now replace your initial famousPeople Array by an empty one, as you will
 ## Time to showboat ! Here is how you can display your App on Github :
 
 
+- `ng add angular-cli-ghpages`
+- `ng deploy —base-href=/<repositoryname>/`
+
+Your project should be available at https://<username>.github.io/<repositoryname>
+  
+  ![Alt Text](https://media.giphy.com/media/uYWDhmIl11XI4/giphy.gif)
+
+
+
+
+
