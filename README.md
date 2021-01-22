@@ -111,7 +111,7 @@ This way you can access the data from your  FamousPeopleService.
 
 5.  In **famous-people-list.component.html** :
 
-Displays your arrays famous people in a list-group (Remember you have Bootstrap installed), and for each item display the First Name, Last Name and Description and add 2 buttons "Pros" and "Cons".
+Displays your arrays famous people in a list-group (Remember you have Bootstrap installed), and for each item display the First Name, Last Name and Description and add 2 buttons "Pros" and "Cons" displaying the numbers of advantages and disadvantages.
 
 **Tips** :
 
