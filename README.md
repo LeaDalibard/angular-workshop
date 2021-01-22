@@ -62,7 +62,7 @@ In the terminal type :
 
 `ng generate service famousPeople`
 
-In this file we are gonna deal with our data : add a Famous People, delete one or modify ..
+In this file we are gonna deal with our data : add a Famous People, modify or delete one...
 
 
 In **famousPeople.service.ts** : Add a variable famousPeople which is an array of objects (we will make it dynamic later)
@@ -93,9 +93,23 @@ famousPeople = [
   ];
 ```
 
-In **famous-people-list.component.ts** : Import service in constructor and call your posts onInit
+4. In **famous-people-list.component.ts** : 
 
-4.  In **famous-people-list.component.html** :
+Import the FamousPeopleService.
+Add a private FamousPeopleService parameter of type FamousPeopleService to the constructor.
+
+Declare a variable `famousPeople=[] ;`
+
+And instance it inside ngOnInit to be :
+
+```
+ngOnInit(): void {
+    this.famousPeople = this.famousPeopleService.famousPeople;
+  }
+```
+This way you can access the data from your  FamousPeopleService.
+
+5.  In **famous-people-list.component.html** :
 
 Displays your arrays famous people in a list-group (Remember you have Bootstrap installed), and for each item display the First Name, Last Name and Description and add 2 buttons "Pros" and "Cons".
 
@@ -160,9 +174,9 @@ You can now replace your initial famousPeople Array by an empty one, as you will
 
 ## Time to showboat ! Here is how you can display your App on Github :
 
-
+- ng build --prod`
 - `ng add angular-cli-ghpages`
-- `ng deploy —base-href=/<repositoryname>/`
+- `ng deploy --base-href=/<repositoryname>/`
 
 Your project should be available at https://<username>.github.io/<repositoryname>
   
