@@ -123,11 +123,26 @@ You should have something like that :
 
 ![pros,cons](/pros-cons.png)
 
-6. Add 2 methods `onClickAddPros()` and `onClickAddCons()` to make the button dynamic so that when you click on Pros, you increase advantage counter and on Cons disadvantages counter . They should call 2 methods in **famousPeople.service.ts** (as this is where your are managing your data) :`addPros()` and `addCons()`. 
+6. Let's add counter to our buttons using [Event binding] (https://angular.io/guide/event-binding) !
 
-**Tips** :
-- Use [Event binding] (https://angular.io/guide/event-binding) 
-- Add **index** to your `*ngFor` and pass it as an argument to your methods
+ In **famous-people-list.component.html** :
+ Add **index** to your `*ngFor` and add a method to your button Pros using this index as a parameter : `(click)="onClickAddPros(i)"`
+ 
+ In **famous-people-list.component.ts** :
+ Add a method `onClickAddPros()` :
+ ```
+ onClickAddPros(i: number) {
+    this.famousPeopleService.addPros(i);
+  }
+  ```
+Remember ? We are managing our data in famousPeopleService, so in  **famousPeople.service.ts**, add the method addPros that actually increases our advantage counter when clicking the buttons :
+
+```
+ addPros(i: number) {
+    this.famousPeople[i].advantages++;
+  }
+```
+Do the same for the disadvantages counter.
 
 **Extra** :
 - Use [ngClass](https://www.angularjswiki.com/angular/how-to-add-a-class-based-on-condition-in-angular/) to change background color depending on Pros and Cons.
