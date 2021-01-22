@@ -100,7 +100,7 @@ Add a private FamousPeopleService parameter of type FamousPeopleService to the c
 
 Declare a variable `famousPeople=[] ;`
 
-And instance it inside ngOnInit to be :
+And instance it inside [ngOnInit](https://angular.io/api/core/OnInit)  to be :
 
 ```
 ngOnInit(): void {
@@ -123,11 +123,16 @@ You should have something like that :
 
 ![pros,cons](/pros-cons.png)
 
-5. Add 2 methods `onClickAddPros()` and `onClickAddCons()` to make the button dynamic so that when you click on Pros, you increase advantage counter and on Cons disadvantages counter . They should call 2 methods in **famousPeople.service.ts** :`addPros()` and `addCons()`.
+6. Add 2 methods `onClickAddPros()` and `onClickAddCons()` to make the button dynamic so that when you click on Pros, you increase advantage counter and on Cons disadvantages counter . They should call 2 methods in **famousPeople.service.ts** (as this is where your are managing your data) :`addPros()` and `addCons()`. 
 
 **Tips** :
 - Use [Event binding] (https://angular.io/guide/event-binding) 
 - Add **index** to your `*ngFor` and pass it as an argument to your methods
+
+**Extra** :
+- Use [ngClass](https://www.angularjswiki.com/angular/how-to-add-a-class-based-on-condition-in-angular/) to change background color depending on Pros and Cons.
+
+
 
 ### Make a form where you can add your famous people :
 
