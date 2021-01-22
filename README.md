@@ -148,12 +148,11 @@ Do the same for the disadvantages counter.
 - Use [ngClass](https://www.angularjswiki.com/angular/how-to-add-a-class-based-on-condition-in-angular/) to change background color depending on Pros and Cons.
 
 
-
 ### Make a form where you can add your famous people :
 
 1. Create a new Component AddPeopleComponent.
 2. In the template, create a form with inputs First name, Last Name and Description.
-3. Add attributes "name" and ngModel to inputs to signal Angular which inputs to check.
+3. Add attributes "name" and [ngModel](https://angular.io/api/forms/NgModel) to inputs to signal Angular which inputs to check.
 
 As an example for First name you should have something like :
 
@@ -162,21 +161,20 @@ As an example for First name you should have something like :
         <label for="fname">
           First name :
         </label>
-        <input type="text" id="fname" class="form-control"  name="fname" ngModel required>
+        <input type="text" id="fname" class="form-control"  name="fname" ngModel >
       </div>
 ```
+
 4. To submit the form add the following to your template :
+
 ` <form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm"> `
 
 `<button class="btn btn-primary" type="submit">Add</button>`
 
 5. In **add-people.component.ts**, import famousPeopleService, and passed it as an argument in your constructor.
-Add the `onSubmit()` method which take value from the form and use a addFamousPeople method from Services to pass it to your form FamousPeople.
+
+Add the `onSubmit()` method which take value from the form and use a addFamousPeople method from Services to pass it to your form FamousPeople (as we did for the advantages and disadvantages counters).
 You can now replace your initial famousPeople Array by an empty one, as you will be filling it yourself.
-
-6. Add a delete button in **famous-people-list.component.ts** and onClick call a method `deleteFamousPeople`in famousPeopleService.
-
-**Tips** : Use splice()
 
 7. Congrats you are done with the requirements, go add styling and extra useful functionnality to you app !
 
@@ -184,6 +182,7 @@ You can now replace your initial famousPeople Array by an empty one, as you will
 ### Nice to Have:
 
 - Add validation to your form
+- Add a delete button **Tips** : Use splice()
 - Make a model for Famous people
 - Use Routing
 - Add other functionnalities : photos, comment, sort by, changed color depending of pros and counters
