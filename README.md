@@ -153,7 +153,7 @@ Do the same for the disadvantages counter.
 1. Create a new Component AddPeopleComponent.
 2. In the template, create a form with inputs First name, Last Name and Description.
 3. Add attributes "name" and [ngModel](https://angular.io/api/forms/NgModel) to inputs to signal Angular which inputs to check.
-(In app.module.ts, you also need to import the FormsMOdule and pass it to your imports array)
+(In app.module.ts, you also need to import the FormsModule and pass it to your imports array)
 As an example for First name you should have something like :
 
 ```
@@ -175,7 +175,7 @@ As an example for First name you should have something like :
 
 Also import `{NgForm} from '@angular/forms';`
 
-Add the `onSubmit()` method which take value from the form and use a addFamousPeople method from Services to pass it to your array FamousPeople (as we did for the advantages and disadvantages counters):
+Add the `onSubmit()` method which takes value from the form and uses a addFamousPeople method from Services to pass it to your array FamousPeople (as we did for the advantages and disadvantages counters):
 
 ```
  onSubmit(form: NgForm) {
@@ -204,7 +204,7 @@ addFamousPeople(newFamousPeople) {
   }
 ```
 
-7. Congrats you are done with the requirements, go add styling and extra useful functionnality to you app !
+7. Congrats you are done with the requirements, go add styling and extra useful functionnalities to you app !
 
 
 ### Nice to Have:
@@ -213,15 +213,15 @@ addFamousPeople(newFamousPeople) {
 - Add a delete button **Tips** : Use splice()
 - Make a model for Famous people
 - Use Routing
-- Add other functionnalities : photos, comment, sort by, changed color depending of pros and counters
+- Add other functionnalities : photos, comment, sort by.. 
 - Add some styling
 - Add edit function
-- Save your datas using XXXXX
+- Save your datas using [Firebase](https://firebase.google.com)
 
 
 ## Time to showboat ! Here is how you can display your App on Github :
 
-- ng build --prod`
+- `ng build --prod`
 - `ng add angular-cli-ghpages`
 - `ng deploy --base-href=/<repositoryname>/`
 
