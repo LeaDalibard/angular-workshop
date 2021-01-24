@@ -115,7 +115,7 @@ Displays your arrays famous people in a list-group (Remember you have Bootstrap 
 
 **Tips** :
 
-- Use [interpolation] (https://angular.io/guide/interpolation) to communicate from code to template
+- Use [interpolation](https://angular.io/guide/interpolation) to communicate from code to template
 - Use [*ngFor](https://guide-angular.wishtack.io/angular/composants/ngfor) to loop inside your array
 
 
@@ -123,7 +123,7 @@ You should have something like that :
 
 ![pros,cons](/pros-cons.png)
 
-6. Let's add counter to our buttons using [Event binding] (https://angular.io/guide/event-binding) !
+6. Let's add counter to our buttons using [Event binding](https://angular.io/guide/event-binding) !
 
  In **famous-people-list.component.html** :
  Add **index** to your `*ngFor` and add a method to your button Pros using this index as a parameter : `(click)="onClickAddPros(i)"`
