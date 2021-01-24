@@ -1,6 +1,5 @@
 # Angular Workshop
 
-## Learning objectives
 
 ## The Mission
 
@@ -206,6 +205,7 @@ addFamousPeople(newFamousPeople) {
 
 7. Congrats you are done with the requirements, go add styling and extra useful functionnalities to you app !
 
+![Ross gif](https://media.giphy.com/media/XGnH2RGHoCqumsAXpo/giphy.gif)
 
 ### Nice to Have:
 
@@ -227,7 +227,7 @@ addFamousPeople(newFamousPeople) {
 
 Your project should be available at https://<username>.github.io/<repositoryname>
   
-  ![Alt Text](https://media.giphy.com/media/uYWDhmIl11XI4/giphy.gif)
+  ![Ross gif](https://media.giphy.com/media/uYWDhmIl11XI4/giphy.gif)
 
 
 
