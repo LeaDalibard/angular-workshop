@@ -225,7 +225,8 @@ addFamousPeople(newFamousPeople) {
 - `ng add angular-cli-ghpages`
 - `ng deploy --base-href=/<repositoryname>/`
 
-Your project should be available at https://<username>.github.io/<repositoryname>
+Your project should be available at https://<user_name>.github.io/<project_name>/.
+
   
   ![Ross gif](https://media.giphy.com/media/uYWDhmIl11XI4/giphy.gif)
 
