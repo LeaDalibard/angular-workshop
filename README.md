@@ -22,7 +22,7 @@ Make a very useful Application to make you own list of famous people you would l
   
   `"styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
-              "src/styles.scss"
+              "src/styles.css"
             ], `
             
 - You can now launch the server in your terminal : `ng serve --open`
